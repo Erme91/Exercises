@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#accordion_main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion_wrapper {
+    background-color:#f4f4f5;
+    border-radius: 0.25rem;
+}
+
+.accordion_title {
+    width: 100%;
+    padding: 15px 20px;
+    background: #f1f1f1;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #27272a;
+    font-weight: 500;
+    font-family: "Inter Tight,sans-serif";
+    text-align: left;
+}
+
+.accordion_answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #71717a;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+
+.accordion_answer p {
+    margin: 15px 0;
+}
+
+.accordion_wrapper.open .accordion_answer {
+    max-height: 100px;
+
+}
+
+.toggle_icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.horizontal, .vertical {
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    background-color: #a1a1aa;;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.vertical {
+    transform: rotate(90deg);
+}
+.toggle_icon.open .vertical {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.toggle_icon.open .horizontal {
+    transform: rotate(0deg);
+}
