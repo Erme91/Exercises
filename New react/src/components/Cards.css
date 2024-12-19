@@ -1,0 +1,48 @@
+* {
+    max-width: 1240px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    padding-left: 100px;
+}
+
+.card_container {
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(43, 53, 204, 0.607);
+    overflow: hidden;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+h2 {
+    color: rgb(17, 17, 78);
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    color: rgb(56, 6, 103);
+    font-weight: 500;
+    font-style: oblique;
+}
+
+.delete {
+    margin-top: 30px;
+}
